@@ -4,11 +4,17 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React from 'react'
+import styled from 'styled-components'
 import Navbar from './Navbar'
+import StickyInfo from './StickyInfo'
 
 interface LayoutProps {
   children: React.ReactNode
 }
+
+const Main = styled.main`
+  height: calc(100vh - 5.4rem);
+`
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
@@ -32,11 +38,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
       </Head>
 
-      <div className='w-full h-screen bg-body dark:bg-font'>
+      <div className='relative w-full h-screen bg-body dark:bg-font'>
         <Navbar />
-        <main className='max-w-[1920px] mx-auto flex gap-y-12 px-4 xl:px-0'>
+        <Main className='max-w-[1920px] mx-auto flex gap-y-12 px-4 xl:px-0'>
           {children}
-        </main>
+        </Main>
+        <StickyInfo />
       </div>
     </div>
   )
