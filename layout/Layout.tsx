@@ -38,7 +38,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
       </Head>
 
-      <div className='relative w-full h-screen bg-body dark:bg-font'>
+      <div className='relative w-full min-h-screen bg-body dark:bg-font'>
         <Navbar />
         <Main className='pt-12 max-w-[1920px] mx-auto flex px-4 xl:px-0'>
           {children}

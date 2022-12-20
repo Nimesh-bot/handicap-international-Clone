@@ -5,7 +5,7 @@ import Latest from './Action/Latest'
 
 const Action = () => {
   return (
-    <div className='pb-12 flex flex-col gap-y-4'>
+    <div className='w-full lg:w-11/12 mx-auto pb-12 flex flex-col gap-y-4'>
         <Header />
         <ActionInProgress />
         <Latest />

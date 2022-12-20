@@ -2,8 +2,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { TbHeartbeat } from 'react-icons/tb'
-
 const HTMLContainer = styled.div`
     p {
         color: #000;
@@ -20,12 +18,12 @@ const actionData = {
 
 const ActionInProgress = () => {
   return (
-    <div className='flex flex-col gap-y-8 px-4'>
-        <h1 className='text-primary text-[45px]'>Actions in process</h1>
+    <div className='flex flex-col gap-y-4 px-4 mt-4 lg:mt-0'>
+        <h1 className='text-primary text-[36px] lg:text-[45px] font-normal'>Actions in process</h1>
         <HTMLContainer className='flex flex-col gap-y-2' dangerouslySetInnerHTML={{ __html: actionData.data }}/>
-        <div className='bg-info p-12 flex flex-col items-center justify-center gap-y-16'>
-            <h1 className='text-white font-normal'>Areas of Intervention</h1>
-            <div className='flex gap-x-12 justify-center items-center'>
+        <div className='bg-info p-12 flex flex-col items-center justify-center gap-16'>
+            <h1 className='text-white font-normal text-center'>Areas of Intervention</h1>
+            <div className='flex flex-wrap gap-12 justify-center items-center'>
                 <div className='flex flex-col gap-y-2 text-white items-center'>
                     <img src='/icons/heart.png' className='w-12 h-auto' alt='Health'/>
                     <p className='text-white uppercase'>Health</p>
