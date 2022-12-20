@@ -16,7 +16,7 @@ const StickyInfo = () => {
     } 
 
     return (
-        <div className='sticky bottom-0 h-10 flex items-center bg-footer gap-x-8 md:hidden lg:flex'>
+        <div className='w-full fixed bottom-0 h-10 flex items-center bg-footer gap-x-8 md:hidden lg:flex'>
             <div className='relative hidden lg:flex'>
                 <div className='flex items-center gap-x-12 border-r-[1px] border-r-font p-2'>
                     <div className='flex items-center gap-x-4'>

@@ -71,8 +71,8 @@ const Navbar = () => {
     if (search) return <SearchBar clickEvent={() => setSearch(false)} />
 
     return (
-        <div className='sticky top-0'>
-            <div className='sticky top-0 h-12 flex justify-between items-center p-4 bg-body'>
+        <div className='sticky top-0 w-full z-50'>
+            <div className='h-12 flex justify-between items-center p-4 bg-body'>
                 <img src='/logo/logo.png' className='h-10 w-auto' alt='Handicap International Logo'/>
 
                 <ul className='flex gap-x-8 items-center relative'>

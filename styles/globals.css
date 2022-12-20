@@ -10,13 +10,13 @@
 }
 @layer base {
     * {
-        @apply text-font dark:text-body;
+        @apply text-font dark:text-body font-heading;
     }
     body {
         @apply bg-body dark:bg-font;
     }
     p {
-        @apply text-sm font-light text-fade;
+        @apply text-sm text-fade;
     }
     h1 {
         @apply text-xl font-bold;

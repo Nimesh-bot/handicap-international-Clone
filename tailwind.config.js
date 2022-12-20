@@ -15,8 +15,8 @@ module.exports = {
       'xl': '27px',
     },
     fontFamily: {
-      'heading': ['Poppins', 'sans-serif'],
-      'body': ['Poppins', 'sans-serif'],
+      'heading': ['Nunito', 'sans-serif'],
+      'body': ['Nunito', 'sans-serif'],
     },
     extend: {
       colors: {

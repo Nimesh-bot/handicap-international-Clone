@@ -13,7 +13,7 @@ interface LayoutProps {
 }
 
 const Main = styled.main`
-  height: calc(100vh - 5.4rem);
+  min-height: calc(100vh - 5.4rem);
 `
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -40,7 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       <div className='relative w-full h-screen bg-body dark:bg-font'>
         <Navbar />
-        <Main className='max-w-[1920px] mx-auto flex gap-y-12 px-4 xl:px-0'>
+        <Main className='pt-12 max-w-[1920px] mx-auto flex px-4 xl:px-0'>
           {children}
         </Main>
         <StickyInfo />
