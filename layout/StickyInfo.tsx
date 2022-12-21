@@ -27,7 +27,7 @@ const StickyInfo = () => {
                 </div>
 
                 {
-                    !dropMenu && 
+                    dropMenu && 
                     <div className='absolute bottom-8 w-80 bg-footer border-[1px] border-[#14141515] rotate-180'>
                         <ul className='flex flex-col gap-y-2 rotate-180 py-2'>
                         {
