@@ -3,7 +3,7 @@ import React from 'react'
 import { FlatIconButton } from '../../Buttons'
 
 const LatestCard = ({ categories, image, title }: any) => (
-    <div className='flex flex-col gap-y-4'>
+    <div className='flex flex-col gap-y-4 border-b-[2px] border-b-primary rounded-b-[2px]'>
         <img src={image} alt='Latest Stories' className='flex-1 aspect-video' />
         <div className='flex gap-x-4'>
             {

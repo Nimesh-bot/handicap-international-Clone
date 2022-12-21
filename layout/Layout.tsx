@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React from 'react'
 import styled from 'styled-components'
+import Footer from './Footer'
 import Navbar from './Navbar'
 import StickyInfo from './StickyInfo'
 
@@ -44,6 +45,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {children}
         </Main>
         <StickyInfo />
+        <Footer />
       </div>
     </div>
   )

@@ -1,7 +1,10 @@
 import React from 'react'
 import ActionInProgress from './Action/ActionInProgress'
+import Divider from './Action/Divider'
+import Funders from './Action/Funders'
 import Header from './Action/Header'
 import Latest from './Action/Latest'
+import Situation from './Action/Situation'
 
 const Action = () => {
   return (
@@ -9,6 +12,9 @@ const Action = () => {
         <Header />
         <ActionInProgress />
         <Latest />
+        <Divider />
+        <Situation />
+        <Funders />
     </div>
   )
 }
